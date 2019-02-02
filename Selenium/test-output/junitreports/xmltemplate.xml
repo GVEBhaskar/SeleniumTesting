@@ -1,0 +1,7 @@
+<suite name="Application Name" parallel="tests"
+<test name="Scenario Name">
+<classes>
+<class name="Packge Name.ClassName"/>
+</classes>
+</test>
+</suit>

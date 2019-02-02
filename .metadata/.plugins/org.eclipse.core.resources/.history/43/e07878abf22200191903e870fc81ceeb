@@ -1,0 +1,34 @@
+package com.ScreenShot;
+
+import java.io.File;
+
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Bing_ScreenShot {
+
+
+	
+
+	public static void main(String[] args) throws IOException
+	{
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Dell 5570\\Desktop\\Selenium Testing\\DriverFiles\\chromedriver.exe");
+		WebDriver driver = null;
+		driver = new ChromeDriver();
+		String url = "http://bing.com";
+		driver.get(url);
+		
+		File bing_Screenshot=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		//FileUtils.copyFile(arg0, arg1)
+		FileUtils.copyFile(bing_Screenshot, new File("C:\\Users\\Dell 5570\\Desktop\\Bhaskar_Selenium\\Selenium\\ScreenShots\\bing.png"));
+		//FileUtils.copyFile(bing_Screenshot, new File("C:\\Users\\Dell 5570\\Desktop\\Selenium Testing\\ScreenShots\bing.png"));
+		
+driver.quit();
+	}
+
+}

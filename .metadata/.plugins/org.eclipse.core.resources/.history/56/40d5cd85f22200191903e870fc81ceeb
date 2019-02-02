@@ -1,0 +1,30 @@
+package com.OHRMTestScripts;
+
+import java.io.FileInputStream;
+
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.annotations.Test;
+
+import com.OHRMLib.LogInKeywords;
+
+public class LogInTest 
+{
+	@Test
+	public void LogIn()
+	{
+		LogInKeywords keys = new LogInKeywords();
+		FileInputStream file = new FileInputStream(".\\src\\comm\\ExcelTestDataFiles\\KeywordDriven.xlsx");
+		XSSFWorkbook wb = new XSSFWorkbook();
+		XSSFSheet ws = wb.getSheet("Sheet1");
+		
+		Row r = null;
+		int rowCount=ws.getLastRowNum();
+		for (int i=1; i<=rowCount; i++)
+		{
+			r=ws.getRow(i);
+		}
+	}
+
+}

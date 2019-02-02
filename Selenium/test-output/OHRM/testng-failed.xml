@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [OHRM]" parallel="tests">
+  <test thread-count="5" name="on firefox(failed)" parallel="tests">
+    <parameter name="Browser" value="firefox"/>
+    <classes>
+      <class name="com.SeleniumGrid.OHRM_LogInTest">
+        <methods>
+          <include name="logIn" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.SeleniumGrid.OHRM_LogInTest -->
+    </classes>
+  </test> <!-- on firefox(failed) -->
+  <test thread-count="5" name="on chrome(failed)" parallel="tests">
+    <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="com.SeleniumGrid.OHRM_LogInTest">
+        <methods>
+          <include name="logIn" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.SeleniumGrid.OHRM_LogInTest -->
+    </classes>
+  </test> <!-- on chrome(failed) -->
+</suite> <!-- Failed suite [OHRM] -->

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="NewTours">
+  <test name="Login" >
+    <classes>
+       <class name="com.DataDriven.NewTours_NewUserRegistration_TestData" />
+    </classes>
+  </test>
+</suite>
