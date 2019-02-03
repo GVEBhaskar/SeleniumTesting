@@ -2,28 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="30217" started-at="2019-02-02T12:34:05Z" finished-at="2019-02-02T12:34:35Z">
+  <suite name="Default suite" duration-ms="95321" started-at="2019-02-03T02:06:22Z" finished-at="2019-02-03T02:07:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="30217" started-at="2019-02-02T12:34:05Z" finished-at="2019-02-02T12:34:35Z">
-      <class name="com.DataDriven.NewTours_NewUserRegistration_TestData">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.DataDriven.NewTours_NewUserRegistration_TestData@3532ec19]" name="setUp" is-config="true" duration-ms="8894" started-at="2019-02-02T12:34:05Z" finished-at="2019-02-02T12:34:14Z">
+    <test name="Default test" duration-ms="95321" started-at="2019-02-03T02:06:22Z" finished-at="2019-02-03T02:07:58Z">
+      <class name="com.AutoIt.UploadImage">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.AutoIt.UploadImage@5b275dab]" name="setUp" is-config="true" duration-ms="36027" started-at="2019-02-03T02:06:22Z" finished-at="2019-02-03T02:06:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="register()[pri:0, instance:com.DataDriven.NewTours_NewUserRegistration_TestData@3532ec19]" name="register" duration-ms="2612" started-at="2019-02-02T12:34:14Z" finished-at="2019-02-02T12:34:16Z">
+        <test-method status="PASS" signature="uploadFile()[pri:0, instance:com.AutoIt.UploadImage@5b275dab]" name="uploadFile" duration-ms="40472" started-at="2019-02-03T02:06:58Z" finished-at="2019-02-03T02:07:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- register -->
-        <test-method status="PASS" signature="newUserRegistration()[pri:1, instance:com.DataDriven.NewTours_NewUserRegistration_TestData@3532ec19]" name="newUserRegistration" duration-ms="17798" started-at="2019-02-02T12:34:16Z" finished-at="2019-02-02T12:34:34Z">
+        </test-method> <!-- uploadFile -->
+        <test-method status="PASS" signature="browser()[pri:1, instance:com.AutoIt.UploadImage@5b275dab]" name="browser" duration-ms="18772" started-at="2019-02-03T02:07:39Z" finished-at="2019-02-03T02:07:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- newUserRegistration -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.DataDriven.NewTours_NewUserRegistration_TestData@3532ec19]" name="tearDown" is-config="true" duration-ms="866" started-at="2019-02-02T12:34:34Z" finished-at="2019-02-02T12:34:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.DataDriven.NewTours_NewUserRegistration_TestData -->
+        </test-method> <!-- browser -->
+      </class> <!-- com.AutoIt.UploadImage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
